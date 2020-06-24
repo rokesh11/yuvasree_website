@@ -1,0 +1,28 @@
+﻿body
+{
+	 background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSOJIYQJQRLWmrdUIPNmF_RtYwv-o3M-SWiW6ERPhBYfq_VxAqq&usqp=CAU");
+}
+h1
+{
+	text-align:center;
+	font-family:"Times New Roman", Times, serif;
+}
+table
+{
+	width:100%;
+	padding:2% 10% 2% 10%;
+}
+td
+{
+	padding:1%;
+}
+.label,.address,.prod
+{
+    font-family:"Times New Roman", Times, serif;
+	font-size:120%;
+}
+#summary
+{
+	text-align:center;
+	font-size:150%;
+}

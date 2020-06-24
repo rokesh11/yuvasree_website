@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="StyleSheet1.css">
+    <script type="text/javascript" src="Script1.js"></script>
+    <title>Product order form</title>
+</head>
+<body>
+<H1><strong>PLACE YOUR ORDER</strong></H1>
+<form>
+<table border="0">
+<tr>
+<td class="label">First name </td>
+<td class="input"><input id="fname" type="text" name="fname" onblur="validatefname()"></td>
+<td class="feedback"><span id="fnameprompt">&nbsp;</span></td>
+</tr>
+<tr>
+<td class="label">Last name </td>
+<td class="input"><input id="lname" type="text" name="lname" onblur="validatelname()"></td>
+<td class="feedback"><span id="lnameprompt">&nbsp;</span></td>
+</tr>
+<tr>
+<td class="label">E-mail </td>
+<td class="input"><input id="email" type="email" name="email" placeholder="xyz@gmail.com"></td>
+</tr>
+<tr>
+<td class="label">Set password </td>
+<td class="input"><input id="passw" type="password" name="password" onblur="validatepassword()"></td>
+<td class="feedback"><span id="passwordprompt">&nbsp;</span></td>
+</tr>
+<tr>
+<td class="label">Phone Number </td>
+<td class="input"><input id="phone" type="text" name="phone" onblur="validatephone()" placeholder="xxx-xxx-xxxx"></td>
+<td class="feedback"><span id="phoneprompt">&nbsp;</span></td>
+</tr>
+<tr>
+<td class="label">Date of delivery </td>
+<td class="input"><input id="date" type="date" name="date" required></td>
+</tr>
+<tr>
+<td class="address">Address</td>
+</tr>
+<tr>
+<td class="label">Street name </td>
+<td class="input"><input id="street" type="text" name="street" onblur="validatestreet()"></td>
+<td class="feedback"><span id="streetprompt">&nbsp;</span></td>
+</tr>
+<tr>
+<td class="label">City </td>
+<td class="input"><input id="city" type="text" name="city" onblur="validatecity()"></td>
+<td class="feedback"><span id="cityprompt">&nbsp;</span></td>
+</tr>
+<tr>
+<td class="label">State </td>
+<td class="input"><input id="state" type="text" name="state" onblur="validatestate()"></td>
+<td class="feedback"><span id="stateprompt">&nbsp;</span></td>
+</tr>
+
+<tr>
+<td class="label">Country </td>
+<td class="input">
+<select name="country" id="country">
+  <option value="India">India</option>
+  <option value="China">China</option>
+  <option value="Japan">Japan</option>
+  <option value="Russia">Russia</option>
+  <option value="South Korea">South Korea</option>
+  <option value="Vietnam">Vietnam</option>
+  <option value="Indonesia">Indonesia</option>
+  <option value="Hongkong">Hongkong</option>
+   <option value="Taiwan">Taiwan</option>
+  <option value="Malaysia">Malaysia</option>
+  <option value="Singapore">Singapore</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td><br></td>
+</tr>
+
+<tr>
+<td class="prod">Products</td>
+</tr>
+
+<tr>
+<td><br></td>
+</tr>
+
+
+<tr>
+<td class="label"><input id="shirt" type="checkbox" name="dress">Shirt Rs.500<br></td>
+</tr>
+
+
+<tr>
+<td class="label">Quantity &nbsp;<input id="quantity1" type="number" min="1" max="30"></td>
+<td class="label">&nbsp;&nbsp;&nbsp;&nbsp;Color &nbsp;<input id="color" type="color"></td>
+<td class="label">Size &nbsp;
+<select name="size" id="size">
+  <option value="XS">XS</option>
+  <option value="S">S</option>
+  <option value="M">M</option>
+  <option value="L">L</option>
+  <option value="XL">XL</option>
+  <option value="XXL">XXL</option>
+  <option value="XXXL">XXXL</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td><br></td>
+</tr>
+
+
+<tr>
+<td class="label"><input id="sshirt" type="checkbox" name="dress">SweatShirt Rs.500<br></td>
+</tr>
+
+
+<tr>
+<td class="label">Quantity &nbsp;<input id="quantity2" type="number" min="1" max="30"></td>
+<td class="label">&nbsp;&nbsp;&nbsp;&nbsp;Color &nbsp;<input id="color" type="color"></td>
+<td class="label">Size &nbsp;
+<select name="size" id="size">
+  <option value="XS">XS</option>
+  <option value="S">S</option>
+  <option value="M">M</option>
+  <option value="L">L</option>
+  <option value="XL">XL</option>
+  <option value="XXL">XXL</option>
+  <option value="XXXL">XXXL</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td><br></td>
+</tr>
+
+
+<tr>
+<td class="label"><input id="sneakers" type="checkbox" name="dress">Sneakers Rs.500<br></td>
+</tr>
+
+
+<tr>
+<td class="label">Quantity &nbsp;<input id="quantity3" type="number" min="1" max="30"></td>
+<td class="label">&nbsp;&nbsp;&nbsp;&nbsp;Color &nbsp;<input id="color" type="color"></td>
+<td class="label">Size &nbsp;
+<select name="size" id="size">
+  <option value="XS">XS</option>
+  <option value="S">S</option>
+  <option value="M">M</option>
+  <option value="L">L</option>
+  <option value="XL">XL</option>
+  <option value="XXL">XXL</option>
+  <option value="XXXL">XXXL</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td><br></td>
+</tr>
+
+<tr>
+<td class="label">Send gift</td>
+<td><input name="gift" type="radio">Yes</td>
+<td><input name="gift" type="radio">No</td>
+</tr>
+
+<tr>
+<td><br></td>
+</tr>
+
+<tr>
+<td class="label">How's my form?</td>
+<td></td>
+<td>
+<textarea id="review" rows="5" cols="50" placeholder="Type in your response here!!" >
+</textarea>
+</td>
+</tr>
+
+
+<tr>
+<td><br></td>
+</tr>
+
+<tr>
+<td></td>
+<td class="button">
+<input id="button" type="button" onclick="calc()" value="Order now">
+</td>
+</tr>
+
+</table>
+
+<p id="summary"></p>
+</form>
+
+</body>
+</html>
