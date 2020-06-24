@@ -128,6 +128,6 @@ if(cq3.checked==true)
 var amnt3=q3*price;
 sum=sum+amnt3;
 }
-document.getElementById("summary").innerHTML="<h2><strong>ORDER SUMMARY:<strong><h2>";
-document.getElementById("summary").innerHTML+="<strong>Total : Rs.<strong>"+sum;
+document.getElementById("summary").innerHTML="<h2><strong>ORDER SUMMARY:</strong></h2>";
+document.getElementById("summary").innerHTML+="<strong>Total : Rs.</strong>"+sum;
 }
